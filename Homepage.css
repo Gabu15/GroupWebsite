@@ -1,0 +1,27 @@
+#Wrapper
+{
+    position: relative;
+    top:1%;
+    left: 25%;
+    margin: auto;
+
+}
+
+#Slideshow
+{
+    height: 600px;
+    width: 700px;
+    float: left;
+    border: 2px solid ;
+}
+
+#SideImg
+{
+    height: 700px;
+    width : 500px;
+    border: 2px solid ;
+    float: left;
+
+}
+
+

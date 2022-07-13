@@ -1,0 +1,124 @@
+header
+{
+  background-color: lightgrey;
+  position: relative; 
+  bottom: 10px;
+  width: 101%;
+  position: relative; 
+  left: -10px;
+}
+
+nav {
+  
+    margin: 16px auto;
+    background-color: darkgray;
+    overflow: visible;
+
+  }
+
+nav ul
+{
+    position: relative; 
+    left: 40px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+}
+
+.Logo img {
+  height: 90px;
+  width: 55%;
+  
+}  
+
+.Logo 
+{
+
+  height: 100px ;
+  width: 25%;
+  position: relative; 
+    left: 50px;
+    bottom: -50px;
+    padding: 0;
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+.MainLinks
+{
+  
+  width: 5%;
+  display: block;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  position: absolute;
+  top: 8px;
+  right: 40px;
+  
+  
+}
+
+.MainLinks img
+{
+  justify-content: space-evenly;
+  height: 30px ;
+}
+
+nav a {
+    font-family: "Roboto Slab", serif;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px ;
+    display: block;   
+  }
+  
+
+  #SearchBar
+  {
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: 75px;
+    left: 350px;
+    color: #9DBFAF;
+  }
+
+  #SearchButton
+  {
+    background: url(HeaderPics/SearchBtn.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 75px;
+    left: 1310px;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

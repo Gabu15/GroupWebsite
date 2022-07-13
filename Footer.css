@@ -1,0 +1,52 @@
+footer
+{
+    background-color: gray;
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+
+.Links
+{
+    width: 30.33%;
+    margin-left: auto;
+}
+
+.CompanyInfo
+{
+    margin-right: auto;
+    text-align: left;
+    position:relative;
+    left: 500px;
+    width: 30.33%;
+    
+}
+
+.hours
+{
+    width: 30.33%;
+    margin-left: auto;
+}
+#Copyright
+{
+    margin-bottom: auto;
+    position:relative;
+    right: 650px;
+    
+    bottom: -55px;
+    padding: 10px;
+
+    text-align: center;
+    background-color: gray;
+}
+
+h3
+{
+    font-size: 20px;
+    line-height: 1px;
+}
+
+a
+{
+    color: white;
+}
