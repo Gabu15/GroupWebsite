@@ -1,27 +1,51 @@
+body{
+    height: 100%;
+}
+
 #Wrapper
 {
     position: relative;
-    top:1%;
+    top:-1%;
     left: 25%;
     margin: auto;
+    padding: 10px;
 
 }
 
 #Slideshow
 {
-    height: 600px;
-    width: 700px;
+    height: 640px;
+    width: 910px;
     float: left;
     border: 2px solid ;
 }
 
-#SideImg
+#Slideshow img
 {
-    height: 700px;
-    width : 500px;
-    border: 2px solid ;
+    height: 500px;
+    width: 900px;
+    gap: 2px;
     float: left;
 
 }
 
+.SideImg
+{
+    height: 650px;
+    width : 400px;
+    border: 2px solid ;
+    display: block;
+    padding-bottom: 3px;
+    float: left;
 
+}
+
+.SideImg img
+{
+    height: 200px;
+    width : 400px;
+   padding-bottom: 3px;
+}
+span {
+    margin: 100px 0px;
+}

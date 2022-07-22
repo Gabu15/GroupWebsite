@@ -1,14 +1,15 @@
 var i = 1;
-var imgs = ['HomepagePics/1.png','HomepagePics/2.png','HomepagePics/3.png'];  //load images
+var imgs = ['HomepagePics/Ad_1.png','HomepagePics/Ad_2.png','HomepagePics/Ad_3.png'];  //load images
 var time = 10000;
 var imgID = document.getElementById("slide");
-imgID.src = `HomepagePics/1.png`;
+imgID.src = `HomepagePics/Ad_1.png`;
+var timer = setTimeout("changeimgAuto()", time);
 
-function changeimg()
+function changeimgAuto()
 {  
   
     console.log(imgID);
-    if( i < imgs.length )
+    if( i < imgs.length)
     {
       i++;
       
@@ -17,36 +18,43 @@ function changeimg()
     {
         i = 1;
     }
-    imgID.src = `HomepagePics/${i}.png`;
-    setTimeout("changeimg()", time);
+    imgID.src = `HomepagePics/Ad_${i}.png`;
+    timer = setTimeout("changeimgAuto()", time);
 }
 
 function leftBtn()
 {
-  if (i < imgs.length && i != 0)
+  if (i < imgs.length + 1 )
   {
+    console.log("hlll")
+    
     i = i -1;
-    imgID.src = `HomepagePics/${i}.png`;
-  }
-  else
-  {
-    i = 1;
-    imgID.src = `HomepagePics/${i}.png`;
+    if (i == 0)
+    {
+
+      i = 3
+    }
+    imgID.src = `HomepagePics/Ad_${i}.png`;
+    clearTimeout(timer);
+    timer = setTimeout("changeimgAuto()", time + 10000);
+
   }
 
 }
 
 function rightBtn()
 {
-  if (i < imgs.length  && i != 4)
+  if (i < imgs.length + 1)
   {
     i++;
-    imgID.src = `HomepagePics/${i}.png`;
-  }
-  else
-  {
-    i = 1;
-    imgID.src = `HomepagePics/${i}.png`;
+    if (i == 4)
+    {
+      i = 1
+    }
+    imgID.src = `HomepagePics/Ad_${i}.png`;
+    clearTimeout(timer);
+    timer = setTimeout("changeimgAuto()", time + 10000);
+
+
   }
 }
-changeimg()
