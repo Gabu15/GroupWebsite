@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Schedule Pick-up / Drop off</title>
+</head>
+<body>
+        <div class="Schedule_container"> 
+            <form action="Dropoff_Pickup.php" method="POST">
+                <label for="PickOrDrop">Pick up or Drop off:</label>
+                <select id="PickOrDrop" name="PickOrDrop">
+                    <option value="Pick-up">Pick-up</option>
+                    <option value="Drop off">Drop off</option>
+                </select>
+                <input type="text" name="Fname" placeholder="Enter your First Name"/>
+                <input type="text" name="Lname" placeholder="Enter your Last Name"/>
+                <input type="text" name="HomeAddress" placeholder="Enter your home address"/>
+                <input type="number" name="PhoneNumber" placeholder="Enter your phone number"/>
+                <input type="date" name ="date" min="2022-7-25" max="2032-7-25"/>
+                <label for="Time">Schedule The Time :</label>
+                <select id="Time" name="Time">
+                    <option value="9am-10am">9am-10am</option>
+                    <option value="11am-12pm">11am-12pm</option>
+                    <option value="1pm-2pm">1pm-2pm</option>
+                    <option value="3pm-4pm">3pm-4pm</option>
+                    <option value="5pm-6pm">5pm-6pm</option>
+                </select>
+                <input type="submit" name="submit" value="Submit"/>
+        </div>
+</body>
+</html>
